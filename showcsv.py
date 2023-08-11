@@ -19,7 +19,7 @@ def display(file,title):
             treeview.insert("", "end", values=row)
         treeview.pack()
 
-    file_path = file # Replace with your own file path
+    file_path = file
     display_csv(file_path)
 
     root.mainloop()
