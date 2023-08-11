@@ -25,10 +25,10 @@ root = tk.Tk()
 root.title('Login')
 
 # Set background color
-root.config(bg='gray') # Change 'gray' to the desired color
+root.config(bg='gray') 
 
 # Load and display logo image
-logo_image = Image.open('/home/parthasarathy/Downloads/face_recognition/assets/logo.png')  # Replace 'logo.png' with the filename of your logo image
+logo_image = Image.open('/home/parthasarathy/Downloads/face_recognition/assets/logo.png')  
 logo_image = logo_image.resize((150, 150))  # Resize the logo image as needed
 logo_photo = ImageTk.PhotoImage(logo_image)
 logo_label = tk.Label(root, image=logo_photo)
@@ -36,15 +36,15 @@ logo_label.grid(row=0, columnspan=2, padx=10, pady=10)  # Place the logo label o
 
 
 
-email_label = tk.Label(root, text='Email:', font=('Helvetica', 16)) # Increase font size to 16
+email_label = tk.Label(root, text='Email:', font=('Helvetica', 16))
 email_label.grid(row=1, column=0, padx=10, pady=30, sticky='e')
-email_entry = tk.Entry(root, font=('Helvetica', 16)) # Increase font size to 16
+email_entry = tk.Entry(root, font=('Helvetica', 16)) 
 email_entry.grid(row=1, column=1, padx=10, pady=30, sticky='w')
 
 # Create password label and entry field
-password_label = tk.Label(root, text='Password:', font=('Helvetica', 16)) # Increase font size to 16
+password_label = tk.Label(root, text='Password:', font=('Helvetica', 16)) 
 password_label.grid(row=2, column=0, padx=10, pady=30, sticky='e')
-password_entry = tk.Entry(root, show='*', font=('Helvetica', 16)) # Increase font size to 16
+password_entry = tk.Entry(root, show='*', font=('Helvetica', 16))
 password_entry.grid(row=2, column=1, padx=10, pady=30, sticky='w')
 
 # Create login button
